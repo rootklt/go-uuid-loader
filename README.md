@@ -55,5 +55,17 @@
         生成loader文件的模板,默认为go，目前支持go、csharp (default "go")
 ```
 
+```bash
+    go run . -s ~/tmp/payload.txt -t cs -d output/csloader.cs
+```
+
+![output](imgs/output.png)
+
+![output1](imgs/cs_uuid.png)
+
     本工具是根据YanMu2020改编的。
-    > https://github.com/YanMu2020/uuid_go_loder
+> https://github.com/YanMu2020/uuid_go_loder
+
+### 存在问题
+
+1.  在非windows下编译go loader时存在无法加载 golang.org/x/sys/windows库
